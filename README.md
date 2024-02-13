@@ -34,6 +34,16 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.ibb.co/nMvPxmV/Architecture-Before-Hardening-Security-Controls.jpg)
 
+The purpose of this phase was to monitor the attack patterns utilized by malicious actors in a "real-world" setting.
+
+This phase began with the deployment of the virtual environment and its subsequent exposure to the public internet with minimal security controls. The use of minimal security controls in this phase allowed malicious actors to discover the environment and attempt a variety of cyber attacks. The environment consisted of a Windows 10 Virtual Machine hosting a SQL database, a Linux Virtual Machine, a blob storage account, and a key vault. The purpose of having all of these components was to increase the attack surface and could monitor the different methods used by attackers.
+
+In order to guarantee the environment would be discoverable, the virtual machines had firewalls disabled and the network security groups (NSGs) were configured to allow all inbound traffic. The storage account and key vault were deployed with public endpoints visible to the internet. After the creation of the environment, Log Analytics workspace was set up for log aggregation and Microsoft Sentinel was in turn used for incident creation. Lastly four workbooks with custom queries were created in Microsoft Sentinel to plot the recorded malicious activity on a world map, with the purpose of providing a visual aid for the attacks.
+
+The results of these real-world attacks can be seen in the following section.
+
+
+
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.ibb.co/F5qpGJ0/Architecture-After-Hardening-Security-Controls.jpg)
 
