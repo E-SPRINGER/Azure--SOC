@@ -24,8 +24,6 @@ In this project, I build a mini honeynet in Azure and ingest log sources from va
 -	Microsoft Sentinel for Security Information and Event Management (SIEM)
 -	Microsoft Defender for Cloud to Protect Cloud Resources
 -	Windows Remote Desktop for Remote Access
--	testing
--
 -	[NIST SP 800-53 Revision 5](https://csrc.nist.gov/pubs/sp/800/53/r5/upd1/final) For security controls.
 
 -	[NIST SP 800-61 Revision 2](https://www.nist.gov/privacy-framework/nist-sp-800-61) For incident handling.
